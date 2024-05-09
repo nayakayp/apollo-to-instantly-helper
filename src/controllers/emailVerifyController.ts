@@ -6,12 +6,12 @@ import fs from "fs";
 
 type ApolloJSON = {
   Name: string;
-  "Linkedin URL": string;
+  LinkedinURL: string;
   Title: string;
-  "Company Name": string;
+  CompanyName: string;
   Email: string;
   Phone: string;
-  Locations: string;
+  Location: string;
 };
 
 type ReoonJSON = {

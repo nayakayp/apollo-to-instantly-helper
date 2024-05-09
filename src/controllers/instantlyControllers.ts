@@ -19,9 +19,9 @@ type InstantlyReq = {
 
 type ApolloJSON = {
   Name: string;
-  "Linkedin URL": string;
+  LinkedinURL: string;
   Title: string;
-  "Company Name": string;
+  CompanyName: string;
   Email: string;
   Phone: string;
   Location: string;
@@ -71,10 +71,10 @@ export const addLeadsToCampaign = async (
           first_name: nameAtrrs.firstName as string,
           last_name: nameAtrrs.lastName,
           email: reoonResults[idx]["email"],
-          company_name: lead["Company Name"],
+          company_name: lead["CompanyName"],
           phone: lead.Phone,
           custom_variables: {
-            linkedin_url: lead["Linkedin URL"],
+            linkedin_url: lead["LinkedinURL"],
             title: lead.Title,
             locations: lead.Location,
           },
