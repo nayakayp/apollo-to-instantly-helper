@@ -82,7 +82,7 @@ export const addLeadsToCampaign = async (
       }
     });
 
-    res.status(200).json({ msg: instantlyReq });
+    res.status(200).json(instantlyReq);
   } catch (error) {
     res.status(500).json({ msg: "Internal server error" });
   }
